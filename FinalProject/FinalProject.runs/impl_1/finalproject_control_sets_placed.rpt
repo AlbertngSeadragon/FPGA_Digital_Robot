@@ -1,0 +1,80 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Apr 03 23:11:38 2022
+| Host         : DESKTOP-4QPBOCI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file finalproject_control_sets_placed.rpt
+| Design       : finalproject
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    49 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              34 |           19 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             216 |           58 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              37 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+-------------------------------------+-------------------------------------+------------------+----------------+
+|            Clock Signal            |            Enable Signal            |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++------------------------------------+-------------------------------------+-------------------------------------+------------------+----------------+
+|  eqOp                              |                                     |                                     |                1 |              1 |
+|  ssd_controller_0/u_clk100hz/pulse |                                     |                                     |                1 |              1 |
+|  NORMAL/u_clk1hz/s_mode_reg        |                                     |                                     |                1 |              1 |
+|  HAPPY/u_clk1hz/pulse              |                                     |                                     |                1 |              1 |
+|  color_reg[2]_i_2_n_0              |                                     |                                     |                1 |              3 |
+|  clk_IBUF_BUFG                     | spi_master_0/clk_toggles[4]_i_2_n_0 | spi_master_0/last_bit_rx            |                1 |              5 |
+|  u_clk1hz/CLK                      |                                     |                                     |                2 |              8 |
+|  clk_IBUF_BUFG                     |                                     |                                     |               12 |             19 |
+|  clk_IBUF_BUFG                     |                                     | spi_master_0/assert_data            |                8 |             28 |
+|  clk_IBUF_BUFG                     |                                     | ssd_controller_0/u_clk100hz/pulse_0 |                8 |             31 |
+|  clk_IBUF_BUFG                     |                                     | NORMAL/u_clk1hz/pulse               |                8 |             31 |
+|  clk_IBUF_BUFG                     |                                     | u_clk1hz/pulse                      |                8 |             31 |
+|  clk_IBUF_BUFG                     |                                     | HAPPY/u_clk1hz/pulse_0              |                8 |             31 |
+|  clk_IBUF_BUFG                     |                                     | u_clk50mhz/pulse                    |                9 |             32 |
+|  hcount_reg[31]_i_3_n_0            |                                     | hcount[31]_i_1_n_0                  |                9 |             32 |
+|  hcount_reg[31]_i_3_n_0            | vcount                              | vcount[31]_i_1_n_0                  |                9 |             32 |
++------------------------------------+-------------------------------------+-------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     4 |
+| 3      |                     1 |
+| 5      |                     1 |
+| 8      |                     1 |
+| 16+    |                     9 |
++--------+-----------------------+
+
+

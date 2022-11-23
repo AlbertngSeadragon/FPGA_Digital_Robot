@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Nov 23 14:08:47 2022
+# Process ID: 281036
+# Current directory: C:/FPGA_Digital_Robot/FinalProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent277112 C:\FPGA_Digital_Robot\FinalProject\FinalProject.xpr
+# Log file: C:/FPGA_Digital_Robot/FinalProject/vivado.log
+# Journal file: C:/FPGA_Digital_Robot/FinalProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/FPGA_Digital_Robot/FinalProject/FinalProject.xpr
+INFO: [Project 1-313] Project file moved from 'C:/FinalProject' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Output Repository Path: Could not find the directory 'C:/FPGA_Digital_Robot/FinalProject/FinalProject.cache/ip', nor could it be found using path 'C:/FinalProject/FinalProject.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 804.586 ; gain = 108.098
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 23 14:10:24 2022...

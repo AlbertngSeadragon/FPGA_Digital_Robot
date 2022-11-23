@@ -1,0 +1,808 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Apr 03 23:10:11 2022
+# Process ID: 48048
+# Current directory: C:/FinalProject/FinalProject.runs/synth_1
+# Command line: vivado.exe -log finalproject.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finalproject.tcl
+# Log file: C:/FinalProject/FinalProject.runs/synth_1/finalproject.vds
+# Journal file: C:/FinalProject/FinalProject.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source finalproject.tcl -notrace
+Command: synth_design -top finalproject -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 59140 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 282.801 ; gain = 72.914
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'finalproject' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:40]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:5' bound to instance 'u_clk50mhz' of component 'clock_divider' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+	Parameter N bound to: 50000000 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:5' bound to instance 'u_clk1hz' of component 'clock_divider' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized1' [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+	Parameter N bound to: 50000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized1' (1#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+	Parameter N bound to: 5000000 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:5' bound to instance 'u_clk10hz' of component 'clock_divider' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized3' [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+	Parameter N bound to: 5000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized3' (1#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+	Parameter N bound to: 500000 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:5' bound to instance 'u_clk100hz' of component 'clock_divider' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized5' [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+	Parameter N bound to: 500000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized5' (1#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+	Parameter N bound to: 50 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:5' bound to instance 'u_clk1Mhz' of component 'clock_divider' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized7' [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+	Parameter N bound to: 50 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized7' (1#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+WARNING: [Synth 8-614] signal 'vcount' is read in the process but is not in the sensitivity list [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:229]
+INFO: [Synth 8-3491] module 'ssd_controller' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/ssd_controller.vhd:4' bound to instance 'ssd_controller_0' of component 'ssd_controller' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'ssd_controller' [C:/FinalProject/FinalProject.srcs/sources_1/new/ssd_controller.vhd:13]
+	Parameter N bound to: 500000 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:5' bound to instance 'u_clk100hz' of component 'clock_divider' [C:/FinalProject/FinalProject.srcs/sources_1/new/ssd_controller.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized9' [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+	Parameter N bound to: 500000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized9' (1#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+WARNING: [Synth 8-614] signal 'data' is read in the process but is not in the sensitivity list [C:/FinalProject/FinalProject.srcs/sources_1/new/ssd_controller.vhd:43]
+INFO: [Synth 8-226] default block is never used [C:/FinalProject/FinalProject.srcs/sources_1/new/ssd_controller.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'ssd_controller' (2#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/ssd_controller.vhd:13]
+	Parameter slaves bound to: 1 - type: integer 
+	Parameter d_width bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'spi_master' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/spi_master.vhd:30' bound to instance 'spi_master_0' of component 'spi_master' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:250]
+INFO: [Synth 8-638] synthesizing module 'spi_master' [C:/FinalProject/FinalProject.srcs/sources_1/new/spi_master.vhd:52]
+	Parameter slaves bound to: 1 - type: integer 
+	Parameter d_width bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spi_master' (3#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/spi_master.vhd:52]
+INFO: [Synth 8-3491] module 'mode2face' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/mode2.vhd:35' bound to instance 'MODE2' of component 'mode2face' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'mode2face' [C:/FinalProject/FinalProject.srcs/sources_1/new/mode2.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'mode2face' (4#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/mode2.vhd:39]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,0]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,1]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,2]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,3]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,4]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,5]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,6]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,7]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,8]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,9]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,10]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,11]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,12]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,13]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,14]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,15]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,16]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,17]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,18]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,19]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,20]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,21]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,22]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,23]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,24]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,25]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,26]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,27]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,28]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,29]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,30]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,31]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,32]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,33]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,34]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,35]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,36]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,37]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,38]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,39]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,40]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[0,41]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,0]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,1]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,2]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,3]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,4]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,5]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,6]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,7]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,8]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,9]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,10]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,11]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,12]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,13]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,14]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,15]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,16]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,17]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,18]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,19]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,20]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,21]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,22]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,23]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,24]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,25]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,26]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,27]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,28]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,29]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,30]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,31]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,32]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,33]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,34]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,35]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,36]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,37]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,38]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,39]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,40]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[1,41]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,0]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,1]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,2]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,3]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,4]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,5]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,6]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,7]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,8]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,9]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,10]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,11]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,12]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,13]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,14]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+WARNING: [Synth 8-549] port width mismatch for port 'mode2_out[2,15]': port width = 3, actual width = 4 [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:128]
+INFO: [Common 17-14] Message 'Synth 8-549' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3491] module 'welcomeface' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/welcomeface.vhd:35' bound to instance 'WELCOME' of component 'welcomeface' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:300]
+INFO: [Synth 8-638] synthesizing module 'welcomeface' [C:/FinalProject/FinalProject.srcs/sources_1/new/welcomeface.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'welcomeface' (5#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/welcomeface.vhd:39]
+INFO: [Synth 8-3491] module 'whoface' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/whoface.vhd:35' bound to instance 'WHO' of component 'whoface' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'whoface' [C:/FinalProject/FinalProject.srcs/sources_1/new/whoface.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'whoface' (6#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/whoface.vhd:39]
+INFO: [Synth 8-3491] module 'sadface' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/sadface.vhd:35' bound to instance 'SAD' of component 'sadface' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:302]
+INFO: [Synth 8-638] synthesizing module 'sadface' [C:/FinalProject/FinalProject.srcs/sources_1/new/sadface.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'sadface' (7#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/sadface.vhd:39]
+INFO: [Synth 8-3491] module 'happyface' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/happyface.vhd:63' bound to instance 'HAPPY' of component 'happyface' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:303]
+INFO: [Synth 8-638] synthesizing module 'happyface' [C:/FinalProject/FinalProject.srcs/sources_1/new/happyface.vhd:70]
+	Parameter N bound to: 50000000 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:5' bound to instance 'u_clk1hz' of component 'clock_divider' [C:/FinalProject/FinalProject.srcs/sources_1/new/happyface.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized11' [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+	Parameter N bound to: 50000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized11' (7#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'happyface' (8#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/happyface.vhd:70]
+INFO: [Synth 8-3491] module 'normalface' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/normalface.vhd:63' bound to instance 'NORMAL' of component 'normalface' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'normalface' [C:/FinalProject/FinalProject.srcs/sources_1/new/normalface.vhd:70]
+	Parameter N bound to: 50000000 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:5' bound to instance 'u_clk1hz' of component 'clock_divider' [C:/FinalProject/FinalProject.srcs/sources_1/new/normalface.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized13' [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+	Parameter N bound to: 50000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized13' (8#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/clock_divider.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'normalface' (9#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/normalface.vhd:70]
+WARNING: [Synth 8-614] signal 'normal_out' is read in the process but is not in the sensitivity list [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:315]
+WARNING: [Synth 8-614] signal 'happy_out' is read in the process but is not in the sensitivity list [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:315]
+WARNING: [Synth 8-614] signal 'sad_out' is read in the process but is not in the sensitivity list [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:315]
+WARNING: [Synth 8-614] signal 'mode2_out' is read in the process but is not in the sensitivity list [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:315]
+WARNING: [Synth 8-614] signal 'welcome_out' is read in the process but is not in the sensitivity list [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:315]
+WARNING: [Synth 8-614] signal 'who_out' is read in the process but is not in the sensitivity list [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:315]
+INFO: [Synth 8-256] done synthesizing module 'finalproject' (10#1) [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:40]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 346.664 ; gain = 136.777
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 346.664 ; gain = 136.777
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/FinalProject/FinalProject.srcs/constrs_1/new/finalproject.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/FinalProject/FinalProject.srcs/constrs_1/new/finalproject.xdc:48]
+Finished Parsing XDC File [C:/FinalProject/FinalProject.srcs/constrs_1/new/finalproject.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/FinalProject/FinalProject.srcs/constrs_1/new/finalproject.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/finalproject_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/finalproject_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 671.000 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 671.000 ; gain = 461.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 671.000 ; gain = 461.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 671.000 ; gain = 461.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/FinalProject/FinalProject.srcs/sources_1/new/spi_master.vhd:129]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/FinalProject/FinalProject.srcs/sources_1/new/spi_master.vhd:129]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/FinalProject/FinalProject.srcs/sources_1/new/spi_master.vhd:129]
+INFO: [Synth 8-5545] ROM "clk_ratio" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "toArduinoNanoData" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'toArduinoNanoData_reg' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:290]
+WARNING: [Synth 8-327] inferring latch for variable 'color_reg' [C:/FinalProject/FinalProject.srcs/sources_1/new/finalproject.vhd:331]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 671.000 ; gain = 461.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 13    
+	   2 Input     31 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 6     
++---Registers : 
+	               32 Bit    Registers := 12    
+	               15 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 44    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module finalproject 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  11 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 8     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__parameterized7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__parameterized9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ssd_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module spi_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               15 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 28    
+Module clock_divider__parameterized11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module happyface 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module clock_divider__parameterized13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module normalface 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "u_clk50mhz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk50mhz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk1hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk1hz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk100hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk100hz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_ratio" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HAPPY/u_clk1hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HAPPY/u_clk1hz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "NORMAL/u_clk1hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "NORMAL/u_clk1hz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk50mhz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk50mhz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk1hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk1hz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[0] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[0]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[1]' (FDE) to 'spi_master_0/clk_ratio_reg[5]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[2]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/last_bit_rx_reg[0]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/last_bit_rx_reg[1]' (FDE) to 'spi_master_0/clk_ratio_reg[5]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/last_bit_rx_reg[2]' (FDE) to 'spi_master_0/clk_ratio_reg[5]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/last_bit_rx_reg[3]' (FDE) to 'spi_master_0/clk_ratio_reg[5]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/last_bit_rx_reg[4]' (FDE) to 'spi_master_0/clk_ratio_reg[5]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/slave_reg[0]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[3]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[4]' (FDE) to 'spi_master_0/clk_ratio_reg[5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\spi_master_0/clk_ratio_reg[5] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[6]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[7]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[8]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[9]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[10]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[11]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[12]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[13]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[14]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[15]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[16]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[17]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[18]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[19]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[20]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[21]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[22]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[23]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[24]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[25]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[26]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[27]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[28]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[29]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_master_0/clk_ratio_reg[30]' (FDE) to 'spi_master_0/clk_ratio_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/clk_ratio_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\color_reg[3] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/tx_buffer_reg[0]' (FDE) to 'spi_master_0/tx_buffer_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[1] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/tx_buffer_reg[1]' (FDE) to 'spi_master_0/tx_buffer_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[2] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/tx_buffer_reg[2]' (FDE) to 'spi_master_0/tx_buffer_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[3] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/tx_buffer_reg[3]' (FDE) to 'spi_master_0/tx_buffer_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[4] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/tx_buffer_reg[4]' (FDE) to 'spi_master_0/tx_buffer_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[5] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/tx_buffer_reg[5]' (FDE) to 'spi_master_0/tx_buffer_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[6] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/tx_buffer_reg[6]' (FDE) to 'spi_master_0/tx_buffer_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[7] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/tx_buffer_reg[7]' (FDE) to 'spi_master_0/tx_buffer_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[8] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/tx_buffer_reg[8]' (FDE) to 'spi_master_0/tx_buffer_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[9] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/tx_buffer_reg[9]' (FDE) to 'spi_master_0/tx_buffer_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[10] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/tx_buffer_reg[10]' (FDE) to 'spi_master_0/tx_buffer_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[11] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/tx_buffer_reg[11]' (FDE) to 'spi_master_0/tx_buffer_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[12] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/tx_buffer_reg[12]' (FDE) to 'spi_master_0/tx_buffer_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[13] )
+INFO: [Synth 8-3886] merging instance 'spi_master_0/tx_buffer_reg[13]' (FDE) to 'spi_master_0/tx_buffer_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/tx_buffer_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_master_0/mosi_retimed_reg )
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/mosi_retimed_reg) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/continue_reg) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/busy_reg) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[14]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[13]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[12]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[11]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[10]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[9]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[8]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[7]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[6]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[5]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[4]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[3]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[2]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[1]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_buffer_reg[0]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[14]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[13]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[12]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[11]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[10]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[9]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[8]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[7]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[6]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[5]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[4]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[3]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[2]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[1]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/rx_data_reg[0]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/tx_buffer_reg[14]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/clk_ratio_reg[31]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (spi_master_0/clk_ratio_reg[5]) is unused and will be removed from module finalproject.
+WARNING: [Synth 8-3332] Sequential element (color_reg[3]) is unused and will be removed from module finalproject.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 671.000 ; gain = 461.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+-------------------+---------------+----------------+
+|Module Name  | RTL Object        | Depth x Width | Implemented As | 
++-------------+-------------------+---------------+----------------+
+|finalproject | who_out[0,0]      | 32x2          | LUT            | 
+|finalproject | who_out[0,1]      | 32x2          | LUT            | 
+|finalproject | who_out[0,2]      | 32x2          | LUT            | 
+|finalproject | who_out[0,3]      | 32x2          | LUT            | 
+|finalproject | who_out[0,4]      | 32x2          | LUT            | 
+|finalproject | who_out[0,6]      | 32x2          | LUT            | 
+|finalproject | who_out[0,7]      | 32x2          | LUT            | 
+|finalproject | who_out[0,8]      | 32x2          | LUT            | 
+|finalproject | who_out[0,9]      | 32x2          | LUT            | 
+|finalproject | who_out[0,10]     | 32x2          | LUT            | 
+|finalproject | who_out[0,11]     | 32x2          | LUT            | 
+|finalproject | who_out[0,12]     | 32x2          | LUT            | 
+|finalproject | welcome_out[0,4]  | 32x2          | LUT            | 
+|finalproject | welcome_out[0,5]  | 32x2          | LUT            | 
+|finalproject | welcome_out[0,6]  | 32x2          | LUT            | 
+|finalproject | welcome_out[0,7]  | 32x2          | LUT            | 
+|finalproject | welcome_out[0,8]  | 32x2          | LUT            | 
+|finalproject | welcome_out[0,9]  | 32x2          | LUT            | 
+|finalproject | welcome_out[0,10] | 32x2          | LUT            | 
+|finalproject | welcome_out[0,11] | 32x3          | LUT            | 
+|finalproject | welcome_out[0,12] | 32x3          | LUT            | 
+|finalproject | welcome_out[0,16] | 32x2          | LUT            | 
+|finalproject | welcome_out[0,17] | 32x2          | LUT            | 
+|finalproject | welcome_out[0,18] | 32x2          | LUT            | 
+|finalproject | welcome_out[0,27] | 32x2          | LUT            | 
+|finalproject | welcome_out[0,39] | 32x2          | LUT            | 
+|finalproject | sad_out[0,8]      | 32x3          | LUT            | 
+|finalproject | sad_out[0,12]     | 32x2          | LUT            | 
+|finalproject | sad_out[0,17]     | 32x2          | LUT            | 
+|finalproject | sad_out[0,18]     | 32x2          | LUT            | 
+|finalproject | sad_out[0,19]     | 32x2          | LUT            | 
+|finalproject | sad_out[0,20]     | 32x2          | LUT            | 
+|finalproject | sad_out[0,21]     | 32x2          | LUT            | 
+|finalproject | happy_out[0,8]    | 32x2          | LUT            | 
+|finalproject | happy_out[0,9]    | 32x2          | LUT            | 
+|finalproject | happy_out[0,10]   | 32x2          | LUT            | 
+|finalproject | happy_out[0,11]   | 32x3          | LUT            | 
+|finalproject | happy_out[0,12]   | 32x3          | LUT            | 
+|finalproject | happy_out[0,15]   | 32x2          | LUT            | 
+|finalproject | happy_out[0,16]   | 32x2          | LUT            | 
+|finalproject | normal_out[0,8]   | 32x2          | LUT            | 
++-------------+-------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 671.000 ; gain = 461.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 671.000 ; gain = 461.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 678.172 ; gain = 468.285
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 678.172 ; gain = 468.285
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 678.172 ; gain = 468.285
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 678.172 ; gain = 468.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 678.172 ; gain = 468.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 678.172 ; gain = 468.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 678.172 ; gain = 468.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   135|
+|3     |LUT1   |   330|
+|4     |LUT2   |   337|
+|5     |LUT3   |    42|
+|6     |LUT4   |    64|
+|7     |LUT5   |   148|
+|8     |LUT6   |   193|
+|9     |FDRE   |   282|
+|10    |LD     |     4|
+|11    |IBUF   |    17|
+|12    |OBUF   |    25|
+|13    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+-------------------------------+------+
+|      |Instance           |Module                         |Cells |
++------+-------------------+-------------------------------+------+
+|1     |top                |                               |  1580|
+|2     |  HAPPY            |happyface                      |   101|
+|3     |    u_clk1hz       |clock_divider__parameterized11 |    83|
+|4     |  NORMAL           |normalface                     |   103|
+|5     |    u_clk1hz       |clock_divider__parameterized13 |    83|
+|6     |  spi_master_0     |spi_master                     |   114|
+|7     |  ssd_controller_0 |ssd_controller                 |    95|
+|8     |    u_clk100hz     |clock_divider__parameterized9  |    83|
+|9     |  u_clk1hz         |clock_divider__parameterized1  |    83|
+|10    |  u_clk50mhz       |clock_divider                  |    83|
++------+-------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 678.172 ; gain = 468.285
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 39 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 678.172 ; gain = 143.949
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 678.172 ; gain = 468.285
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 156 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+188 Infos, 148 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 678.172 ; gain = 468.285
+INFO: [Common 17-1381] The checkpoint 'C:/FinalProject/FinalProject.runs/synth_1/finalproject.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 678.172 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 03 23:11:04 2022...

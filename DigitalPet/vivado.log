@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Nov 23 15:42:59 2022
+# Process ID: 284236
+# Current directory: C:/DigitalPet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent242552 C:\DigitalPet\DigitalPet.xpr
+# Log file: C:/DigitalPet/vivado.log
+# Journal file: C:/DigitalPet\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DigitalPet/DigitalPet.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/DigitalPet/DigitalPet.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 23 15:44:25 2022...
