@@ -24,12 +24,18 @@ It will use a wheel to move around in your house and the design of the wheel can
 
 
 ## Acknowledgement
-[1] A. Geitgey, “Build a hardware-based face recognition system for $150 with the nvidia jetson nano and python,” Medium, 25-Jun-2019. [Online]. Available: https://medium.com/@ageitgey/build-a-hardware-based-face-recognition-system-for-150-with-the-nvidia-jetson-nano-and-python-a25cb8c891fd. [Accessed: 11-Apr-2022]. 
+[1] A. Geitgey, “Build a hardware-based face recognition system for $150 with the nvidia jetson nano and python,” Medium, 25-Jun-2019. [Online]. Available: https://medium.com/@ageitgey/build-a-hardware-based-face-recognition-system-for-150-with-the-nvidia-jetson-nano-and-python-a25cb8c891fd. [Accessed: 11-Apr-2022].
+
 [2] A. Technologies and Instructables, “Bionic wolverine claws,” Instructables, 09-Apr-2022. [Online]. Available: https://www.instructables.com/Bionic-Wolverine-Claws/. [Accessed: 11-Apr-2022].
+
 [3] Ageitgey, “Ageitgey/face_recognition_models: Trained models for the face_recognition python library,” GitHub. [Online]. Available: https://github.com/ageitgey/face_recognition_models. [Accessed: 18-May-2022]. 
+
 [4] “Embedding System Car Design,” Wong Ming Yee. [Online]. Available: https://www.cse.cuhk.edu.hk/~mywong/. [Accessed: 11-Apr-2022].
+
 [5] “Infra-Red (IR) Tracker, Fundamentals of Embedded System Design .” . 
+
 [6] Nvidia-Ai-Iot, “Nvidia-ai-IOT/TRT_POSE_HAND: Real-time hand pose estimation and gesture classification using TENSORRT,” GitHub. [Online]. Available: https://github.com/NVIDIA-AI-IOT/trt_pose_hand. [Accessed: 11-Apr-2022].
+
 [7] “Rapid Prototyping of Digital Systems Lecture 06: Driving ... - cse.cuhk.edu.hk.” [Online]. Available: https://www.cse.cuhk.edu.hk/~mcyang/ceng3430/2122T2/Lec06%20Driving%20Peripheral%20Modules%20with%20ZedBoard.pdf. [Accessed: 11-Apr-2022].
 
 Special Credit to Simon, Wong Ming Yee
