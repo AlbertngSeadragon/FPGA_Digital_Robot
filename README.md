@@ -1,6 +1,6 @@
 # FPGA_Digital_Robot
 
-<image align="centre" src="_readmeIMG/Capture.JPG" alt="Final Product">
+<image align="right" src="_readmeIMG/Capture.JPG" alt="Final Product">
 
 ## Introduction
 The main goal of the project is to investigate the possibility of building an artificial intelligence robot - Digital Companion Pet. It aims to have multiple functionalities of sensors so it can have different reactions based on nearby environment changes. Our idea is inspired by the digital pet concept in the past like Digimon Breeding Game and Tamagotchi. The end-user can pet them, and play around with them. Our products can also be treated as real pets and as a companion to mankind. It will have movement ability and understand basic instructions from the owner. It will be equipped with Artificial Intelligence to identify the owner's facial characteristics and hand gestures. We hope that the digital robot can bring joy to us, especially during a hard time in a pandemic.
